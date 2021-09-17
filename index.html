@@ -8,23 +8,51 @@
     <style>
         .conteint{
             display: grid;
+      
+            background-color: indianred;
+           padding: 20px;
+            grid-template-areas: 
+            "header header header header header header "
+            "menu main main main right right"
+            "menu footer footer footer footer footer";
+           
         }
         .box{
-            
+            font-size: 25px;
+            border: 2px solid red;
+           text-align: center;
+            background-color: wheat;
+            padding: 20px;
+        }
+        .class1{
+            grid-area: header;
+           
+         
+        }
+        .class2{
+            grid-area: menu;
+
+        }
+        .class3{
+            grid-area: main;
+        }
+        .class4{
+            grid-area: right;
+        }
+        .class5{
+
+            grid-area: footer;
         }
     </style>
 </head>
 <body>
    <div class="conteint">
-       <div class="box">1</div>
-       <div class="box">2</div>
-       <div class="box">3</div>
-       <div class="box">4</div>
-       <div class="box">5</div>
-       <div class="box">6</div>
-       <div class="box">7</div>
-       <div class="box">8</div>
-       <div class="box">9</div>
+       <div class="box class1">Header</div>
+       <div class="box class2">menu</div>
+       <div class="box class3">main</div>
+       <div class="box class4">right</div>
+       <div class="box class5">footer</div>
+      
    </div>
 </body>
 </html>
